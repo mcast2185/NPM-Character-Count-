@@ -1,0 +1,22 @@
+{
+  "name": "character_counter",
+  "version": "0.1.0",
+  "description": "counts the character value being input, like twitter",
+  "main": "index.js, index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcast2185/NPM-Character-Count-.git"
+  },
+  "author": "Mario Castro <ozymandias2185@gmail.com> (https://www.npmjs.com/~mcast2185)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mcast2185/NPM-Character-Count-/issues"
+  },
+  "homepage": "https://github.com/mcast2185/NPM-Character-Count-#readme",
+  "dependencies": {
+    "node-modules": "^1.0.1"
+  }
+}

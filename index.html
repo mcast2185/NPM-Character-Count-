@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Count</title>
+</head>
+<body>
+  <input type="text" class="msgInput" onkeyup="sharedChrCountFunc(msgInput, msgCounter, 144)">
+
+    <div>
+      Characters left <span class="msgCounter">144</span>
+    </div>
+</body>
+<script>
+  const msgInput = document.querySelector('.msgInput');
+  const msgCounter = document.querySelector('.msgCounter');
+
+
+  const ensureContentLength = (content, max) => {
+    if (content.length > max) {
+      return false;
+    } else {
+      return true;
+    };
+  };
+
+  const sharedChrCountFunc = (textInput, counter, maxCount) => {
+    textInput.onkeyup = function(){
+      counter.innerHTML = maxCount - this.value.length;
+      if(!ensureContentLength(this.value, (maxCount - 1))){
+        textInput.disabled = true;
+      };
+    };
+  };
+</script>
+</html>
