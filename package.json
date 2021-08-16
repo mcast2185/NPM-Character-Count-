@@ -1,5 +1,5 @@
 {
-  "name": "character_counter",
+  "name": "twitter_character_counter",
   "version": "0.1.0",
   "description": "counts the character value being input, like twitter",
   "main": "index.js, index.html",
